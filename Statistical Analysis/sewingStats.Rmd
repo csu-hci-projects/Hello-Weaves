@@ -1,0 +1,85 @@
+---
+title: "Crochet Experiment"
+output: html_notebook
+author: "Iliana Castillon"
+---
+
+#Load packages
+```{r}
+install.packages("tidyverse")
+library(tidyverse)
+
+library(psych)
+
+install.packages("ggplot2")
+library(ggplot2)
+
+install.packages("car")
+library(car)
+
+install.packages("ez")
+library(ez)
+
+install.packages("tidyverse")
+library(tidyverse)
+
+install.packages("tidyverse")
+library(tidyverse)
+
+install.packages("lsr")
+library(lsr)
+```
+# Read in Data
+```{r}
+data<-read_csv("sewing.csv")
+```
+##Get Descriptives
+```{r}
+str(data$stitches)
+str(data$condtition)
+
+#get mean
+aggregate(data$stitches, by=list(data$condtition), FUN="mean")
+
+#get sd
+aggregate(data$stitches, by=list(data$condtition), FUN="sd")
+
+#SE
+#sd/(sqrt(size))
+#vr SE
+1.632993/(sqrt(14))
+#video SE
+1.345185/(sqrt(14))
+```
+
+vr mean = 3	
+video mean = 2.14
+vr sd = 1.63
+video sd = 1.35
+vr se = 0.36	
+video se = 0.45
+##Graph
+```{r}
+ggplot(data, aes(x=condtition, y=stitches, fill=condtition)) +
+  stat_summary(geom="col",fun = "mean", position=position_dodge()) +
+  stat_summary(fun.data = mean_se, geom="errorbar", width=.2, position = position_dodge(1)) +
+  xlab("Instruction Type") +
+  ylab("Number of Completed Cross Stitches") +
+  theme(panel.background = element_rect(fill="white"), axis.line = element_line(size = 0.5, color = "black"))
+```
+
+###Assumptions
+```{r}
+#Normality:
+qqPlot(data$stitches)
+
+#Variance:
+VarianceTest <- var.test(stitches ~ condtition, data = data)
+VarianceTest
+```
+
+##Independent Sample T-test
+```{r}
+t.test(stitches~condtition, data=data, var.equal=T)
+cohensD(stitches ~ condtition, data=data)
+```
