@@ -37,4 +37,5 @@ Github: https://github.com/csu-hci-projects/Hello-Weaves
 URL: Directory- CS464-FinalProject/Website/sewing-webpage.html
 PowerPoint Presentation 1: https://docs.google.com/presentation/d/1opIAxFwf2IT49vFU-E4DeOoyKD9KB6uEvCkY-EBR4kk/edit?usp=sharing
 PowerPoint Presentation 2: https://docs.google.com/presentation/d/1Tz5gbE3VF1ZLIyZ5jomWgNbR_HIli_1yis9RCETNoCQ/edit?usp=sharing
+Extra Folders Drive: https://drive.google.com/drive/folders/1EYaUEvNHFDkfR9jDaMawXS5Wm_DkW3g1?usp=sharing
 
