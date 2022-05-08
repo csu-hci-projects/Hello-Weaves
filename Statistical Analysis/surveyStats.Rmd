@@ -1,0 +1,55 @@
+---
+title: "Sewing Experiment"
+output: html_notebook
+author: "Kyla"
+---
+#Load packages
+```{r}
+install.packages("tidyverse")
+library(tidyverse)
+
+library(psych)
+
+install.packages("ggplot2")
+library(ggplot2)
+
+install.packages("car")
+library(car)
+
+install.packages("ez")
+library(ez)
+
+install.packages("tidyverse")
+library(tidyverse)
+
+install.packages("tidyverse")
+library(tidyverse)
+
+install.packages("lsr")
+library(lsr)
+```
+
+# Read in Data
+```{r}
+data<-read_csv("video usability results.csv")
+```
+
+##Get Descriptives
+```{r}
+summary(data$Howmuchdidyouenjoywatchingthevideo) #produces the minimum, maximum, mean, median and quartile values for variable 1 of the dataset
+mean(data$Howmuchdidyouenjoywatchingthevideo) # average of variable 1 from the dataset
+sd(data$Howmuchdidyouenjoywatchingthevideo) # standard deviation of variable 1 from the dataset
+```
+
+
+# Read in Data
+```{r}
+data<-read_csv("VR usability survey results.csv")
+```
+
+##Get Descriptives
+```{r}
+summary(data$Howmuchdidyouenjoyusingthevirtualreality) #produces the minimum, maximum, mean, median and quartile values for variable 1 of the dataset
+mean(data$Howmuchdidyouenjoyusingthevirtualreality) # average of variable 1 from the dataset
+sd(data$Howmuchdidyouenjoyusingthevirtualreality) # standard deviation of variable 1 from the dataset
+```
