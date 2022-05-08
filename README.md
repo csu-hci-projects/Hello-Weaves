@@ -29,3 +29,12 @@
 7. Seleck Unknown
 8. You will see the Unity Game
 9. Select the Unity Game and begin sewing!
+
+
+Short Overview Video: https://youtu.be/Z1rJeKrGaG0
+Presentation Video: https://youtu.be/4L7lOquyX1w
+Github: https://github.com/csu-hci-projects/Hello-Weaves
+URL: Directory- CS464-FinalProject/Website/sewing-webpage.html
+PowerPoint Presentation 1: https://docs.google.com/presentation/d/1opIAxFwf2IT49vFU-E4DeOoyKD9KB6uEvCkY-EBR4kk/edit?usp=sharing
+PowerPoint Presentation 2: https://docs.google.com/presentation/d/1Tz5gbE3VF1ZLIyZ5jomWgNbR_HIli_1yis9RCETNoCQ/edit?usp=sharing
+
